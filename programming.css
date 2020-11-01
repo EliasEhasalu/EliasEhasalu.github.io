@@ -122,6 +122,9 @@ ul li {
     margin-top: 64px;
 }
 
+#kasutatud {
+    margin-bottom: 32px;
+}
 a:link {
     color: var(--link-unvisited-color);
     background-color: transparent;
