@@ -7,7 +7,11 @@
     --link-unvisited-color:#268bd2;
     --link-visited-color: #d33682;
     --link-hover-color: #93a1a1;
+    --selection-color: #073642;
+}
 
+::selection {
+    background: var(--selection-color);
 }
 
 html {
