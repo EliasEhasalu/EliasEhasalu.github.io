@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
 :root {
-    --title-color: rgb(40, 40, 40);
+    --title-color: #cb4b16;
     --comment-color: #586e75;
     --main-text-color: #839496;
     --link-unvisited-color:#268bd2;
@@ -13,6 +13,7 @@
     --lifted-color: #073642;
     --background-color: #002b36;
     --highlight-color: #859900;
+    --yellow:#b58900;
 }
 
 ::selection {
@@ -25,7 +26,7 @@ html {
 }
 
 body {
-    background-color: var(--lifted-color);
+    background-color: var(--background-color);
     
     margin: 0;
     display: flex;
@@ -34,8 +35,8 @@ body {
 }
 
 #main-container {
-    max-width: 900px;
     background-color: var(--background-color);
+    max-width: 900px;
     padding-left: 18px;
     padding-right: 18px;
 }
@@ -44,13 +45,13 @@ body {
    on https://css-tricks.com/snippets/css/typewriter-effect/
 */
 #main-title {
-    margin-top: 48px;
-    margin-bottom: 64px;
+    margin-top: 32px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 100px;
     font-family: "Roboto Mono", monospace;
     font-weight: 700;
-    color: #cb4b16;
-    white-space: nowrap;
-    line-height: 0px;
+    color: var(--emphasized-color);
 }
 
 .cursor-blinker {
@@ -66,6 +67,7 @@ body {
 }
 
 h2, h3 {
+    padding-top: 24px;
     font-family: "Roboto Mono", monospace;
     color: var(--comment-color);
 }
@@ -93,10 +95,25 @@ p {
 ul {
     font-size: 14px;
     list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-top: 16px;
+    padding-left: 32px;
+    color: var(--highlight-color);
 }
 
 .highlight {
     color: var(--highlight-color);
+}
+
+.highlight2 {
+    color: var(--title-color);
+}
+
+.yellow {
+    color: var(--yellow);
 }
 
 #sources-used {
