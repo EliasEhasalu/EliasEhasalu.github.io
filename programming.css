@@ -39,6 +39,7 @@ body {
     max-width: 900px;
     padding-left: 18px;
     padding-right: 18px;
+    padding-bottom: 32px;
 }
 
 /* Main title animation adapted from the one curteously provided by Geoff Graham
