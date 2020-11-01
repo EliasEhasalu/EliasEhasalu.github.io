@@ -8,6 +8,7 @@
     --link-visited-color: #d33682;
     --link-hover-color: #93a1a1;
     --selection-color: #073642;
+    --emphasized-color: #93a1a1;
 }
 
 ::selection {
@@ -42,6 +43,11 @@ h2, h3 {
     color: var(--comment-color);
 }
 
+h4 {
+    color: var(--emphasized-color);
+    font-family: "Roboto Mono", monospace;
+}
+
 p {
     font-family: "Source Code Pro", monospace;
     font-size: 14px;
@@ -52,6 +58,10 @@ p {
 
 .tip {
     margin-bottom: 32px;
+}
+
+#sources-used {
+    margin-top: 64px;
 }
 
 a:link {
