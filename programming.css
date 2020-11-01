@@ -118,17 +118,10 @@ ul li {
     color: var(--yellow);
 }
 
-#sources-used {
-    margin-top: 64px;
-}
-
-#kasutatud {
-    margin-bottom: 32px;
-}
 a:link {
     color: var(--link-unvisited-color);
     background-color: transparent;
-
+    
 }
 
 a:visited {
@@ -140,4 +133,26 @@ a:visited {
 a:hover {
     color: var(--link-hover-color);
     background-color: transparent;
+}
+
+#sources-used {
+    margin-top: 64px;
+}
+
+#kasutatud {
+    margin-bottom: 32px;
+}
+
+.kas {
+    text-decoration: none;
+}
+
+.kas:before {
+    color: var(--highlight-color);
+    content: "#include <";
+}
+
+.kas:after {
+    color: var(--highlight-color);
+    content: ">";
 }
