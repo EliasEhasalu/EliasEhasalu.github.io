@@ -4,6 +4,10 @@
     --title-color: rgb(40, 40, 40);
     --comment-color: #586e75;
     --main-text-color: #839496;
+    --link-unvisited-color:#268bd2;
+    --link-visited-color: #d33682;
+    --link-hover-color: #93a1a1;
+
 }
 
 html {
@@ -25,8 +29,6 @@ body {
 h1 {
     font-family: "Roboto Mono", monospace;
     margin-bottom: 48px;
-    /* color: var(--header-color); */
-    text-align: center;
     font-weight: 700;
     color: #cb4b16;
 }
@@ -46,4 +48,21 @@ p {
 
 .tip {
     margin-bottom: 32px;
+}
+
+a:link {
+    color: var(--link-unvisited-color);
+    background-color: transparent;
+
+}
+
+a:visited {
+    color: var(--link-visited-color);
+    background-color: transparent;
+
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    background-color: transparent;
 }
