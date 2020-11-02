@@ -61,6 +61,12 @@ body {
     color: var(--emphasized-color);
 }
 
+@keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+}
+
 h2, h3 {
     padding-top: 24px;
     font-family: "Roboto Mono", monospace;
