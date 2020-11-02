@@ -43,9 +43,6 @@ body {
     padding-bottom: 32px;
 }
 
-/* Main title animation adapted from the one curteously provided by Geoff Graham
-   on https://css-tricks.com/snippets/css/typewriter-effect/
-*/
 #main-title {
     margin-top: 32px;
     padding-bottom: 0;
@@ -56,16 +53,12 @@ body {
     color: var(--emphasized-color);
 }
 
+/* Animation adapted from the one provided by Geoff Graham 
+   on css-tricks.com/snippets/css/typewriter-effect */
 .cursor-blinker {
     border-right: .6em solid;
     animation: caret 1s steps(1) infinite;
     color: var(--emphasized-color);
-}
-
-@keyframes caret {
-    50% {
-      border-color: transparent;
-    }
 }
 
 h2, h3 {

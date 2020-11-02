@@ -1,33 +1,22 @@
 // Code snippet adapted from the one curteously provided by Geoff Graham
 // on https://css-tricks.com/snippets/css/typewriter-effect/
 
-document.addEventListener('DOMContentLoaded',function(event){
-    // array with texts to type in typewriter
-    var dataText = ["Nõuanded algajale programmeerijale"];
-    
-    // type one text in the typwriter
-    // keeps calling itself until the text is finished
-    function typeWriter(text, i) {
-      // chekc if text isn't finished yet
-      if (i < (text.length)) {
-        // add next character to h1
-       document.getElementById("main-title").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true" class="cursor-blinker"></span>';
-  
-        // wait for a while and call this function again for next character
-        setTimeout(function() {
-          typeWriter(text, i + 1)
-        }, 100);
-      }
-    }
-    
-    // start a typewriter animation for a text in the dataText array
-    function StartTextAnimation(i) {
-       // check if dataText[i] exists
-      if (i < dataText[i].length) {
-        // text exists! start typewriter animation
-       typeWriter(dataText[i], 0)
-      }
-    }
-    // start the text animation
-    StartTextAnimation(0);
-  });
+let title = document.getElementById("main-title");
+const text = "Nõuanded algajale programmeerijale";
+sleep_delay = 100;
+
+function write_letter(text, i) {
+  // Execute only if we haven't reached end of text.
+  if (i < text.length) {
+    // Write the current character to title.
+    title.innerHTML = text.substring(0, i + 1) + '<span class="cursor-blinker"></span>';
+
+    // After a small delay, write the next character.
+    setTimeout(function() {
+      write_letter(text, i + 1);
+    }, sleep_delay);
+  }
+  else return;
+}
+
+write_letter(text, 0);
